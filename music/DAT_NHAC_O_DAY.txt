@@ -1,0 +1,2 @@
+Đặt file nhạc MP3 của bạn vào đây và đổi tên thành nhac.mp3.
+Lưu ý: trình duyệt có thể chặn tự phát; nếu vậy cần nhấn/chạm một lần vào trang để phát.

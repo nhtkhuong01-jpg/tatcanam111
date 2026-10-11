@@ -1,0 +1,48 @@
+<!-- MÀN HÌNH MỞ THIỆP -->
+<section id="welcome-screen">
+  <p>MỘT MÓN QUÀ DÀNH CHO BẠN 💌</p>
+
+  <button id="open-heart" onclick="openCard()">
+    💗
+  </button>
+
+  <p>Chạm vào trái tim để mở thiệp nhé!</p>
+</section>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>THIỆP GỬI ĐÉN NHỮNG NGƯỜI DỄ THƯƠNG 11.1💖</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="stars"></canvas><div class="nebula one"></div><div class="nebula two"></div><div id="floatingHearts"></div>
+<audio id="bgMusic" autoplay loop preload="auto"><source src="music/nhac.mp3" type="audio/mpeg"></audio>
+<main class="book">
+<div class="orbit orbit1"></div><div class="orbit orbit2"></div>
+<section class="page active">
+<p class="eyebrow">A LITTLE UNIVERSE OF LOVE</p>
+<div class="heart-cluster"><span>💖</span><span>💜</span><span>💗</span></div>
+<div class="date-title">20<span>/</span>10</div>
+<h1>Chúc mừng ngày Phụ nữ Việt Nam</h1>
+<p class="subtitle">Gửi đến bạn những điều dịu dàng nhất trong vũ trụ này ✨</p>
+<button onclick="nextPage()">Mở món quà 💌</button><p id="musicStatus" class="music-note">♪ Nhạc nền đang chờ phát</p>
+</section>
+<section class="page">
+<p class="eyebrow">A MESSAGE FROM THE HEART</p><div class="heart-icon">💝</div><h1>Gửi lời yêu thương</h1>
+<input id="receiver" placeholder="Tên người nhận">
+<textarea id="wish">Chúc bạn luôn vui vẻ, hạnh phúc, tự tin và gặp thật nhiều điều tốt đẹp. Mong rằng mỗi ngày đều lấp lánh như những vì sao! 💗</textarea>
+<button onclick="saveWish()">Cập nhật lời chúc</button><button class="secondary" onclick="nextPage()">Trang tiếp →</button>
+</section>
+<section class="page">
+<p class="eyebrow">MEMORIES UNDER THE STARS</p>
+<div class="heart-frame"><img src="images/anh1.jpg" alt="Ảnh kỷ niệm" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder">💗<small>Đặt ảnh tại images/anh1.jpg</small></div></div>
+<h1>Khoảnh khắc đáng nhớ</h1><p class="subtitle">Mỗi kỷ niệm là một vì sao sáng trong tim 🌟</p><button class="secondary" onclick="nextPage()">Trang tiếp →</button>
+</section>
+<section class="page">
+<p class="eyebrow">MADE WITH LOVE</p><div class="heart-icon">💖</div><h1 id="finalTitle">Gửi bạn ngàn yêu thương!</h1>
+<p id="finalWish" class="subtitle">Chúc bạn một ngày 20/10 thật rực rỡ!</p><p class="closing">Mong những điều tốt đẹp luôn tìm đến bạn ✨</p><button onclick="restart()">Xem lại từ đầu ↺</button>
+</section>
+<nav class="navigation"><button class="secondary" onclick="prevPage()">← Trước</button><span id="pageNumber">1 / 4</span><button onclick="nextPage()">Tiếp →</button></nav>
+<button class="music-button" id="musicButton" onclick="toggleMusic()">♫ Bật nhạc</button>
+</main><script src="script.js"></script>
+</body></html>
